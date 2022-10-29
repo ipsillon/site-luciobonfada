@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Noto+Sans&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root{
+  --color-primary: #FECB37;
+  --color-secondary: #1E1E1E;
+  --color-text: #CDCCCC;
+  --color-title: #FFFFFF;
+
+}
+
+/*Reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Gerais*/
+body {
+  background-color: var(--color-secondary);
+  font-family: 'Antonio', sans-serif;
+  color: var(--color-primary);
+}
+
+.text-title{
+  font-size: 20px;
+  text-align: center;
+  font-family: noto sans;
+  color: var(--color-text);
+  margin-top: 50px;
+}
+
+.title-section{
+  color: var(--color-title);
+  text-align: center;
+}
+
+/* Navbar */
+.container-fluid{
+  margin-left: 1%;
+  margin-right: 15%;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0;
+}
+
+.navbar img{
+  width: 70px;
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--color-text);
+  margin: 20px;
+  align-content: center;
+}
+
+.line hr{
+  width: 93%;
+  height: 2px;
+  color: var(--color-primary);
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Banner */
+#main{
+  background-image: url(/img/main.jpeg);
+  width: 100vw;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#main h1, #main p{
+  margin-left: 2%;
+}
+
+#main h1{
+  font-size: 140px;
+  padding-top: 140px;
+}
+#main p{
+  font-family: noto sans;
+  color: var(--color-text);
+}
+
+.whats-icon{
+  text-align: end;
+  font-size: 40px;
+  color:#37FE7B;
+}
+
+/* Sobre */
+#sobre{
+  text-align: center;
+}
+
+#sobre .sobre-text {
+  text-align: justify;
+  padding: 0 10%;
+  color: var(--color-text);
+}
