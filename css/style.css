@@ -7,6 +7,7 @@
   --color-secondary: #1E1E1E;
   --color-text: #CDCCCC;
   --color-title: #FFFFFF;
+  --color-btn-text: #000000;
 
 }
 
@@ -38,10 +39,11 @@ body {
 }
 
 /* Navbar */
-.container-fluid{
+#main .container-fluid{
   margin-left: 1%;
   margin-right: 15%;
 }
+
 .navbar{
   display: flex;
   align-items: center;
@@ -99,6 +101,11 @@ body {
 .whats-icon{
   text-align: end;
   font-size: 40px;
+  padding-bottom: 100px;
+}
+
+.whats-icon i{
+  text-decoration: none;
   color:#37FE7B;
 }
 
@@ -111,4 +118,61 @@ body {
   text-align: justify;
   padding: 0 10%;
   color: var(--color-text);
+  padding-bottom: 100px;
+  font-family: noto sans;
+}
+
+/* Portfólio */
+
+
+/* Contato */
+.form-group, button {
+  margin-bottom: 30px
+}
+
+.form-control {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-text);
+}
+
+textarea {
+  height: 150px;
+}
+
+.btn-send {
+  background-color: var(--color-title);
+  color: var(--color-btn-text);
+  font-size: larger;
+  transition: all 0.3s ease;
+}
+
+.btn-send:hover {
+  background-color: var(--color-text);
+  color: var(--color-btn-text);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-btn-text);
+  padding-top: 50px;
+}
+
+footer img {
+  width: 250px;
+}
+
+footer a {
+  color: var(--color-btn-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: #444;
+}
+
+footer i {
+  font-size: 30px;
+  margin: 10px;
 }
