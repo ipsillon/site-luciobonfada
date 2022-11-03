@@ -30,16 +30,17 @@ body {
   text-align: center;
   font-family: noto sans;
   color: var(--color-text);
-  margin-top: 50px;
+  margin: 100px 0 0 0;
 }
 
 .title-section{
   color: var(--color-title);
   text-align: center;
+  margin: 0 0 100px 0 ;
 }
 
 /* Navbar */
-#main .container-fluid{
+#main .container-fluid, .contato{
   margin-left: 1%;
   margin-right: 15%;
 }
@@ -53,6 +54,10 @@ body {
 
 .navbar img{
   width: 70px;
+}
+
+.nav-contact {
+  width: 150px !important;
 }
 
 .navbar ul{
@@ -71,7 +76,7 @@ body {
 
 .line hr{
   width: 93%;
-  height: 2px;
+  height: 3px;
   color: var(--color-primary);
   margin: 0 auto;
   padding: 0;
@@ -109,9 +114,17 @@ body {
   color:#37FE7B;
 }
 
+.container .whats-contact i{
+  margin-top: -120px !important;
+}
+
 /* Sobre */
 #sobre{
   text-align: center;
+}
+
+#sobre .container {
+  margin-bottom: 150px;
 }
 
 #sobre .sobre-text {
@@ -122,8 +135,103 @@ body {
   font-family: noto sans;
 }
 
-/* Portfólio */
+#sobre .title-section {
+  margin-bottom: 20px;
+}
 
+/* Portfólio */
+#portfolio .container{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+
+/* Galeria */
+#galeria .container-fluid{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+#galeria .content{
+  background-color: var(--color-primary);
+  border-radius: 40px;
+  color: #1E1E1E;
+  display: flex;
+  padding: 30px;
+  column-gap: 20px;
+}
+
+#galeria .content img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#galeria .content h2 {
+  margin: 20px 0;
+}
+
+#galeria .content li, 
+#galeria .content p{
+  list-style: none;
+  margin: 10px 0;
+  font-family: noto sans;
+  font-size: 12px;
+}
+
+#galeria .content p a{
+  text-decoration: underline;
+  color: var(--color-secondary);
+}
+
+#galeria a h1 {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+#galeria .voltar-lnk a h1 {
+  color: var(--color-secondary);
+  text-align: left;
+}
+
+#galeria a {
+  text-decoration: none;
+}
+
+#galeria .whats-contact{
+  text-align: center;
+  margin-top: 200px;
+}
+
+#galeria .card-img{
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#galeria .card-img img{
+  border-radius: 20px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#galeria .card-img p{
+  font-family: noto sans;
+  font-size: 12px;
+  color: var(--color-text);
+  text-align: center;
+  padding: 5px 10px;
+}
+
+#galeria .cards-galeria {
+  padding-bottom: 150px;
+}
+
+#galeria .line {
+  margin: 20px;
+}
 
 /* Contato */
 .form-group, button {
@@ -152,15 +260,22 @@ textarea {
   color: var(--color-btn-text);
 }
 
+#contato .container {
+  margin-bottom: 100px;
+}
+
 /* Footer */
 footer {
   background-color: var(--color-primary);
   color: var(--color-btn-text);
   padding-top: 50px;
+  font-family: noto sans;
+  margin-bottom: 20px;
 }
 
 footer img {
   width: 250px;
+  margin-bottom: 20px;
 }
 
 footer a {
