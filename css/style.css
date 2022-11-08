@@ -42,7 +42,6 @@ body {
 /* Navbar */
 #main .container-fluid, .contato{
   margin-left: 1%;
-  margin-right: 15%;
 }
 
 .navbar{
@@ -50,6 +49,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding:0;
+  background: linear-gradient(90deg, rgba(30, 30, 30, 0.67) 1.05%, rgba(30, 30, 30, 0.67) 11.45%, rgba(30, 30, 30, 0.459081) 44.75%, rgba(30, 30, 30, 0.1) 101.44%);
 }
 
 .navbar img{
@@ -63,7 +63,10 @@ body {
 .navbar ul{
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  margin-right: 15%;
   list-style: none;
+  
 }
 
 .navbar a{
@@ -106,16 +109,25 @@ body {
 .whats-icon{
   text-align: end;
   font-size: 40px;
-  padding-bottom: 100px;
 }
 
 .whats-icon i{
   text-decoration: none;
   color:#37FE7B;
+  position: fixed;
+  bottom: 300px;
 }
 
 .container .whats-contact i{
   margin-top: -120px !important;
+}
+.line-top {
+  background: linear-gradient(102.01deg, #1E1E1E -6.95%, rgba(30, 30, 30, 0.29) 92.34%);
+}
+.main-container {
+  height: 100vh;
+  margin: 0 !important;
+  background: linear-gradient(102.01deg, #1E1E1E -6.95%, rgba(30, 30, 30, 0.29) 92.34%);
 }
 
 /* Sobre */
@@ -151,7 +163,6 @@ body {
   height: 150px;
   border-radius: 20px;
   object-fit: cover;
-  padding: 0 20px 0 20px;
 }
 
 #portfolio .container-projetos img {
@@ -169,7 +180,7 @@ body {
 }
 
 #portfolio .col-7{
-  padding: 0 20px 0 20px;
+  /* padding: 0 20px 0 20px; */
   margin: 0 auto;
   margin-top: -30px;
 }
@@ -178,6 +189,35 @@ body {
   font-family: noto sans;
 }
 
+#portfolio .tipos-container{
+  color: var(--color-text);
+}
+
+#portfolio .tipos-container .col-3{
+  padding: 0 20px 0 20px;
+}
+
+#portfolio .tipos-container a{
+  color: var(--color-primary);
+}
+
+#portfolio .tipos-container img {
+  background-color: linear-gradient(180deg, rgba(30, 30, 30, 0.1) 14.75%, rgba(30, 30, 30, 0.83) 78.48%, #1E1E1E 100%);
+border-width: 5px 5px 0px 5px;
+border-style: solid;
+border-color: rgba(254, 203, 55, 0.75);
+border-radius: 30px;
+}
+
+#portfolio .card-01 {
+  border: 1px solid var(--color-primary);
+}
+
+
+#portfolio .container-projetos:after{
+  background-color: linear-gradient(80deg, orange, darken(darkred,2%));
+    opacity: 0.55 !important;
+}
 
 /* Galeria */
 #galeria .container-fluid{
@@ -185,6 +225,7 @@ body {
   justify-content: space-between;
   margin: 50px 0;
 }
+
 #galeria .content{
   background-color: var(--color-primary);
   border-radius: 40px;
@@ -274,6 +315,7 @@ body {
   background-color: var(--color-primary);
   border: none;
   color: var(--color-text);
+  font-family: noto sans;
 }
 
 textarea {
@@ -303,6 +345,11 @@ footer {
   padding-top: 50px;
   font-family: noto sans;
   margin-bottom: 20px;
+}
+
+footer .info p {
+  font-family: 'Antonio', sans-serif;
+  font-size: 20px;
 }
 
 footer img {
