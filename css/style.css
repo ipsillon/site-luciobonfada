@@ -44,13 +44,22 @@ body {
   margin-left: 1%;
 }
 
-.navbar{
+#main .navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding:0;
   background: linear-gradient(90deg, rgba(30, 30, 30, 0.67) 1.05%, rgba(30, 30, 30, 0.67) 11.45%, rgba(30, 30, 30, 0.459081) 44.75%, rgba(30, 30, 30, 0.1) 101.44%);
 }
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0;
+  background: var(--color-secondary);
+}
+
 
 .navbar img{
   width: 70px;
@@ -165,12 +174,41 @@ body {
   object-fit: cover;
 }
 
+#portfolio .card{
+  border-radius: 20px;
+  margin: 0 20px 0 20px;
+  background-color: transparent;
+  border: none;
+}
+
+#portfolio .card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(30, 30, 30, .0),rgba(30, 30, 30, .1), rgba(30, 30, 30, .5), rgba(30, 30, 30, 1));;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#portfolio .container-projetos .col-3 {
+  padding: 0 15px 0 15px;
+  border: none;
+}
+
 #portfolio .container-projetos img {
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
-  padding: 0 20px 0 20px;
+  /* margin: 0 20px 0 20px; */
 }
+
+#portfolio .container-projetos .card{
+  margin: 0 20px 0 20px;
+}
+
 
 #portfolio .container-projetos p{
   color: var(--color-text);
@@ -180,7 +218,6 @@ body {
 }
 
 #portfolio .col-7{
-  /* padding: 0 20px 0 20px; */
   margin: 0 auto;
   margin-top: -30px;
 }
@@ -202,21 +239,14 @@ body {
 }
 
 #portfolio .tipos-container img {
-  background-color: linear-gradient(180deg, rgba(30, 30, 30, 0.1) 14.75%, rgba(30, 30, 30, 0.83) 78.48%, #1E1E1E 100%);
-border-width: 5px 5px 0px 5px;
-border-style: solid;
-border-color: rgba(254, 203, 55, 0.75);
-border-radius: 30px;
+  border-width: 5px 5px 0px 5px;
+  border-style: solid;
+  border-color: rgba(254, 203, 55, 0.75);
+  border-radius: 30px;
 }
 
 #portfolio .card-01 {
   border: 1px solid var(--color-primary);
-}
-
-
-#portfolio .container-projetos:after{
-  background-color: linear-gradient(80deg, orange, darken(darkred,2%));
-    opacity: 0.55 !important;
 }
 
 /* Galeria */
