@@ -52,6 +52,10 @@ body {
   background: linear-gradient(90deg, rgba(30, 30, 30, 0.67) 1.05%, rgba(30, 30, 30, 0.67) 11.45%, rgba(30, 30, 30, 0.459081) 44.75%, rgba(30, 30, 30, 0.1) 101.44%);
 }
 
+nav a{
+  text-align: right;
+}
+
 .navbar{
   display: flex;
   align-items: center;
@@ -62,11 +66,7 @@ body {
 
 
 .navbar img{
-  width: 70px;
-}
-
-.nav-contact {
-  width: 150px !important;
+  width: 65px;
 }
 
 .navbar ul{
@@ -86,12 +86,110 @@ body {
   align-content: center;
 }
 
+.navbar-nav .nav-link.active{
+  color: var(--color-primary) ;
+}
+
+.navbar-nav .nav-link:hover{
+  color: var(--color-primary) ;
+}
+
 .line hr{
   width: 93%;
   height: 3px;
   color: var(--color-primary);
   margin: 0 auto;
   padding: 0;
+}
+
+/* Nav-toggler */
+
+.navbar-toggler {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: .5s ease-in-out;
+  margin: 0;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: var(--color-primary);
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+
+/* Estado quando a barra de navegação está recolhida */
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+
+/* quando a navegação é clicada */
+
+.navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
 }
 
 /* Banner */
