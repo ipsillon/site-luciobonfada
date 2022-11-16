@@ -98,6 +98,7 @@ nav a{
   width: 93%;
   height: 3px;
   color: var(--color-primary);
+  border-top: 2px solid;
   margin: 0 auto;
   padding: 0;
 }
@@ -231,6 +232,7 @@ nav a{
 
 .line-top {
   background: linear-gradient(102.01deg, #1E1E1E -6.95%, rgba(30, 30, 30, 0.29) 92.34%);
+  margin-top: 113px;
 }
 
 .main-container {
