@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px){
+  
+  /* Footer */
+  footer .row{
+    justify-content: center;
+  }
+
+  footer .col-10{
+    text-align: center !important;
+  }
+
+  footer .col-12{
+    display: block !important;
+    text-align: center !important;
+    flex-direction: row-reverse !important;
+  }
+}

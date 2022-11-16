@@ -530,6 +530,11 @@ footer img {
   margin-bottom: 20px;
 }
 
+footer .logoY img{
+  margin-top: 70px;
+  width: 50px !important;
+}
+
 footer a {
   color: var(--color-btn-text);
   text-decoration: none;

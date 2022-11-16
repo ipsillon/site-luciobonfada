@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lúcio Bonfada</title>
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/logo.png" />
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -14,20 +17,14 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="/css/responsive.css">
+
 </head>
 
 <body>
   <section id="main">
     <nav class="navbar fixed-top " id="navbar-container">
-      <!-- <div class="container-fluid col-12">
-        <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="logo lucio bonfada na cor amarelo"></a>
-        <ul class="">
-          <li><a href="#" class="active">HOME</a></li>
-          <li><a href="#sobre" aria-current="page" href="#sobre">SOBRE</a></li>
-          <li><a href="/portfolio.html">PORTFOLIO</a></li>
-          <li><a href="/fale-conosco.html">FALE CONOSCO</a></li>
-        </ul>
-      </div> -->
 
       <div class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-light fixed-top ">
@@ -144,7 +141,7 @@
     </div>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-5">
+        <div class="col-10 col-md-5">
           <div class="form-group">
             <input type="text" class="form-control" id="nome" placeholder="Nome">
           </div>
@@ -152,7 +149,7 @@
             <input type="tel" class="form-control" id="fone" placeholder="Telefone">
           </div>
           <div class="form-group">
-            <textarea name="mensagem" id="mensagem" class="form-control" placeholder="Mensagem"></textarea>
+            <textarea name="mensagem" id="mensagem"  class="form-control" placeholder="Mensagem"></textarea>
           </div>
           <button type="submit" class="btn col-12 btn-send">ENVIAR ></button>
         </div>
@@ -163,36 +160,49 @@
   <footer id="footer">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-4 text-start align-middle">
-          <a class="navbar-brand" href="#"><img class="nav-contact" src="/img/logo-footer_cropped.png"
-              alt="logo lucio bonfada na cor amarelo"></a>
-          <p>Copyright © 2021 - Todos os Direito Reservados à Lúcio Banfada</p>
+        <div class="col-10 col-md-4 text-start">
+          <a href="footer"><img src="/img/logo-footer_cropped.png" alt="logo lucio bonfada na cor cinza"></a>
+          <p>Copyright © 2021 - Todos os Direito Reservados à  Lúcio Banfada</p>
           <p>CNPJ 42.859.263/0001-09 </p>
         </div>
 
-        <div class="col-4 justify-content-center text-center">
+        <div class="col-10 col-md-4 justify-content-center text-center">
           <a href="https://www.instagram.com/luciobonfada/" target="_blank">
             <i class="bi bi-instagram"></i>
           </a>
           <a href="https://www.facebook.com/luciobonfada" target="_blank">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
+          <div class="row logoY">
+            <a href="https://ipsillon.cc" target="_blank">
+              <img class="text-center" src="/img/Prancheta 34id_y_22.png" alt="Logo Y">
+            </a>
+          </div>
         </div>
 
-        <div class="col-4 align-items-center text-end info">
-          <div class="col-12 d-flex justify-content-end align-items-end">
-            <p>+55 53 9959-4693</p><i class="fa-solid   fa-mobile-screen-button"></i>
+        <div class="col-10 col-md-4 align-items-center text-end info">
+          <div class="col-12 justify-content-end align-items-end">
+            <div class="row d-flex">
+              <p>+55 53 9959-4693</p>
+              <i class="fa-solid   fa-mobile-screen-button"></i>
+            </div>
           </div>
-          <div class="col-12 d-flex justify-content-end align-items-end">
-            <p>contato@luciobonfada.com.br</p><i class="fa-sharp fa-solid fa-envelope-open-text"></i>
+          <div class="col-12 justify-content-end align-items-end">
+            <div class="row d-flex">
+              <p>contato@luciobonfada.com.br</p>
+              <i class="fa-sharp fa-solid fa-envelope-open-text"></i>
+            </div>
           </div>
-          <div class="col-12 d-flex justify-content-end align-items-end">
-            <p>R. Manoel Rodrigues de Athayde, 263 <br> Bagé/RS - CEP. 96407-310</p><i
-              class="fa-solid fa-map-location-dot"></i>
+          <div class="col-12 justify-content-end align-items-end">
+            <div class="row d-flex">
+              <p>R. Manoel Rodrigues de Athayde, 263 <br> Bagé/RS - CEP. 96407-310</p>
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </footer>
 
 
 
