@@ -550,3 +550,12 @@ footer i {
   font-size: 30px;
   margin: 10px;
 }
+
+footer .info img {
+  width: 50px;
+  margin: 10px;
+}
+
+footer .info .row {
+  display: block !important;
+}
