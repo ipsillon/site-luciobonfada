@@ -40,11 +40,11 @@ body {
 }
 
 /* Navbar */
-#main .container-fluid, .contato{
+#hero .container-fluid, .contato{
   margin-left: 1%;
 }
 
-#main .navbar{
+#hero .navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +66,7 @@ nav a{
 
 
 .navbar img{
-  width: 65px;
+  height: 65px;
 }
 
 .navbar ul{
@@ -194,22 +194,23 @@ nav a{
 }
 
 /* Banner */
-#main{
+#hero{
   background-image: url(/img/main.jpeg);
   width: 100vw;
+  height: 100vh;
   background-size:cover;
   background-repeat: no-repeat;
 }
 
-#main h1, #main p{
+#hero h1, #hero p{
   margin-left: 2%;
 }
 
-#main h1{
+#hero h1{
   font-size: 140px;
   padding-top: 140px;
 }
-#main p{
+#hero p{
   font-family: noto sans;
   color: var(--color-text);
 }
@@ -269,6 +270,8 @@ nav a{
 
 #portfolio-home .tipos-container img {
   height: 450px;
+  object-fit: cover;
+  border-radius: 22px;
 }
 
 #portfolio-home .col-7{
@@ -318,7 +321,7 @@ nav a{
   border: none;
 }
 
-#portfolio .card::before {
+#portfolio .card::before{
   position: absolute;
   top: 0;
   left: 0;
@@ -409,6 +412,7 @@ nav a{
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 #galeria .content h2 {
@@ -469,12 +473,32 @@ nav a{
 }
 
 #galeria .cards-galeria {
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 #galeria .line {
   margin: 20px;
 }
+
+#galeria .card{
+  border-radius: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+
+#galeria .card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(30, 30, 30, .0),rgba(30, 30, 30, .1), rgba(30, 30, 30, .5), rgba(30, 30, 30, 1));;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 
 /* Contato */
 .form-group, button {
@@ -518,7 +542,7 @@ footer {
   margin-bottom: 20px;
 }
 
-footer .info p {
+footer .info p, footer .info-responsivo p {
   font-family: 'Antonio', sans-serif;
   font-size: 18px;
 }
@@ -542,20 +566,16 @@ footer a {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-footer a:hover {
-  color: #444;
-}
 
 footer i {
   font-size: 30px;
   margin: 10px;
 }
 
-footer .info img {
-  width: 50px;
-  margin: 10px;
+footer .info a:hover, footer .info-responsivo a:hover {
+  color: var(--color-secondary);
 }
 
-footer .info .row {
-  display: block !important;
+footer .info-responsivo i {
+  margin-top: 20px;
 }

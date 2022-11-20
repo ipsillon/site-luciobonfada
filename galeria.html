@@ -26,7 +26,7 @@
       <nav class="navbar navbar-expand-md navbar-light fixed-top ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="logo lucio bonfada na cor amarelo">
+            <img src="img/logo-text.png" alt="logo lucio bonfada na cor amarelo">
           </a>
           <button class="navbar-toggler collapsed d-flex d-md-none flex-column justify-content-around" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -87,10 +87,8 @@
         
       </div>
       
-      <div class="col-2 col-2 whats-icon whats-contact">
-        <a href="https://wa.me/5553999999999?text=Em%20que%20podemos%20ajudar?" target="_blank">
-          <i class="bi bi-whatsapp"></i>
-        </a>
+      <!-- Div para componsar esapaco a direita -->
+      <div class="col-2">
       </div>
 
     </div>
@@ -99,27 +97,39 @@
       <h1 class="title-section">como este</h1>
     </div>
 
-    <div class="container cards-galeria ">
+    <div class="container cards-galeria">
       <div class="card-img">
+        <div class="row">
         
-        <div class="col-3">
-          <img src="img/content/g1.png" alt="">
-          <p>Estrutura de Viga para área externa</p>
-        </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="card">
+              <img src="img/content/g1.png" alt="">
+            </a>
+            <p>Estrutura de Viga para área externa</p>
+          
+          </div>
 
-        <div class="col-3">
-          <img src="img/content/g2.png" alt="">
-          <p>Estrutura de Viga I para prédio comercial</p>
-        </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="card">
+              <img src="img/content/g2.png" alt="">
+            </a>
+            <p>Estrutura de Viga I para prédio comercial</p>
+          </div>
 
-        <div class="col-3">
-          <img src="img/content/g3.png" alt="">
-          <p>Estrutura metálica para pergolado em madeira</p>
-        </div>
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="card">
+              <img src="img/content/g3.png" alt="">
+            </a>
+            <p>Estrutura metálica para pergolado em madeira</p>
+          </div>
 
-        <div class="col-3">
-          <img src="img/content/g4.png" alt="">
-          <p>Estrutura de Viga I para prédio comercial</p>
+          <div class="col-sm-6 col-md-3">
+            <a href="#" class="card">
+              <img src="img/content/g4.png" alt="">
+            </a>
+            <p>Estrutura de Viga I para prédio comercial</p>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -129,6 +139,13 @@
       <hr>
     </div>
   </section>
+
+  <!-- Botão whatsapp -->
+  <div class="container whats-icon col-10">
+    <a href="https://wa.me/555399594693?text=Gostaria%20de%20um%20orçamento." target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
 
   <footer id="footer">
     <div class="container-fluid">
@@ -153,26 +170,70 @@
           </div>
         </div>
 
+        
+        <!-- Info Desktop -->
         <div class="col-10 col-md-4 align-items-center text-end info">
           <div class="col-12 justify-content-end align-items-end">
-            <div class="row d-flex">
-              <p>+55 53 9959-4693</p>
-              <i class="fa-solid   fa-mobile-screen-button"></i>
+            <div class="">
+              <!-- Telefone -->
+              <a href="tel:+5553999594693">
+                <p class="">+55 53 9-9959-4693 <i class="fa-solid fa-mobile-screen"></i></p>
+                
+              </a>
+              
+            </div>
+          </div>
+          <div class="col-12 justify-content-end align-items-end d-inline">
+            <div class="">
+              <!-- Email footer -->
+              <a href="mailto:contato@luciobonfada.com.br?Subject=Contato%20via%20site">
+                <p class="">contato@luciobonfada.com.br <i class="fa-sharp fa-solid fa-envelope-open-text"></i></p>
+              </a>
             </div>
           </div>
           <div class="col-12 justify-content-end align-items-end">
-            <div class="row d-flex">
-              <p>contato@luciobonfada.com.br</p>
-              <i class="fa-sharp fa-solid fa-envelope-open-text"></i>
-            </div>
-          </div>
-          <div class="col-12 justify-content-end align-items-end">
-            <div class="row d-flex">
-              <p>R. Manoel Rodrigues de Athayde, 263 <br> Bagé/RS - CEP. 96407-310</p>
-              <i class="fa-solid fa-map-location-dot"></i>
+            <div class="">
+              <!-- Link rota google maps -->
+              <a class="" href="https://goo.gl/maps/3MUY8vrUFaujYmDQA" target="_blank">
+                <p class="">R. Manoel Rodrigues de Athayde, 263 <br> Bagé/RS - CEP. 96407-310 <i class="fa-solid fa-map-location-dot"></i></p>
+                
+              </a>
             </div>
           </div>
         </div>
+
+        <!-- Info Responsivo -->
+        <div class="col-10 col-md-4 align-items-center text-end info-responsivo">
+          <div class="col-12 justify-content-end align-items-end">
+            <div class="row d-flex">
+              <!-- Telefone -->
+              <i class="fa-solid fa-mobile-screen"></i>
+              <a href="tel:+5553999594693">
+                <p class="">+55 53 9-9959-4693</p>
+              </a>
+              
+            </div>
+          </div>
+          <div class="col-12 justify-content-end align-items-end">
+            <div class="row d-flex">
+              <!-- Email footer -->
+              <i class="fa-sharp fa-solid fa-envelope-open-text"></i>
+              <a href="mailto:contato@luciobonfada.com.br?Subject=Contato%20via%20site">
+                <p class="">contato@luciobonfada.com.br</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 justify-content-end align-items-end">
+            <div class="row d-flex">
+              <!-- Link rota google maps -->
+              <i class="fa-solid fa-map-location-dot"></i>
+              <a class="" href="https://goo.gl/maps/3MUY8vrUFaujYmDQA" target="_blank">
+                <p class="">R. Manoel Rodrigues de Athayde, 263 <br> Bagé/RS - CEP. 96407-310</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </footer>
