@@ -49,7 +49,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding:0;
-  background: linear-gradient(90deg, rgba(30, 30, 30, 0.67) 1.05%, rgba(30, 30, 30, 0.67) 11.45%, rgba(30, 30, 30, 0.459081) 44.75%, rgba(30, 30, 30, 0.1) 101.44%);
+  background: linear-gradient(120deg, rgba(30, 30, 30, 0.67) 1.05%, rgba(30, 30, 30, 0.67) 11.45%, rgba(30, 30, 30, 0.459081) 44.75%, rgba(30, 30, 30, 0.1) 101.44%);
+  transition: .5s;
+}
+
+#hero .active-scroll{
+  background: var(--color-secondary);
+  transition: .5s;
 }
 
 nav a{

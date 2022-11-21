@@ -1,5 +1,10 @@
 
 @media screen and (max-width: 768px){
+
+  /* Navbar */
+  .navbar ul{
+    margin-right: 5px;
+  }
   
   /* Footer */
   footer .row{
