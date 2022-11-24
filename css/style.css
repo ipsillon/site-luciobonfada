@@ -203,7 +203,6 @@ nav a{
 /* Banner */
 #hero{
   background-image: url(/img/main.jpeg);
-  width: 100vw;
   height: 100vh;
   background-size:cover;
   background-repeat: no-repeat;
@@ -239,13 +238,22 @@ nav a{
   margin-top: -120px !important;
 }
 
+.line-top-home {
+  background: linear-gradient(102.01deg, #1E1E1E -6.95%, rgba(51, 51, 51,.0) 92.34%);
+  position: relative;
+  top: 113px;
+}
+
 .line-top {
-  background: linear-gradient(102.01deg, #1E1E1E -6.95%, rgba(51, 51, 51,.29) 92.34%);
-  margin-top: 113px;
+  background: rgba(51, 51, 51,1);
+  position: relative;
+  top: 114px;
 }
 
 .main-container {
-  height: 100vh;
+  height: 88vh;
+  position: relative;
+  top: 113px;
   margin: 0 !important;
   background: linear-gradient(102.01deg, #1E1E1E -6.95%, rgba(51, 51, 51, 0.29) 92.34%);
 }
@@ -295,6 +303,8 @@ nav a{
 
 #sobre .container {
   margin-bottom: 150px;
+  position: relative;
+  top: 114px;
 }
 
 #sobre .sobre-text {
@@ -341,6 +351,11 @@ nav a{
   border-radius: 20px;
   object-fit: cover;
 }
+
+#portfolio {
+  position: relative;
+  top: 114px;
+} 
 
 #portfolio .container-projetos .col-3{
   padding: 0 15px 0 15px;
@@ -405,6 +420,12 @@ nav a{
 }
 
 /* Galeria */
+#galeria {
+  position: relative;
+  top: 114px;
+  padding-bottom: 150px;
+}
+
 #galeria .container-fluid{
   display: flex;
   justify-content: space-between;
@@ -541,7 +562,13 @@ textarea {
 }
 
 #contato .container {
+  position: relative;
+  top: 113px;
   margin-bottom: 100px;
+}
+
+.form-container {
+  padding-bottom: 100px;
 }
 
 /* Footer */
