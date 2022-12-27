@@ -327,7 +327,7 @@ nav a{
 /* Portfólio */
 #portfolio .tipos-container, 
 #portfolio .container-projetos {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
 
 }
